@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java.objectstructure;
+package com.muhardin.endy.advanced.java.objectstructure.inheritance;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
