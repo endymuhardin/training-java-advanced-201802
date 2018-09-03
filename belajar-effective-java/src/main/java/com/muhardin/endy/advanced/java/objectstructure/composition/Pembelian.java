@@ -12,8 +12,9 @@ public class Pembelian {
     private LocalDateTime waktuTransaksi = LocalDateTime.now();
     private String customer;
     
-    Set<PembelianDetail> daftarBelanja = new HashSet<>();
-    Set<Diskon> daftarDiskon = new HashSet<>();
+    Set<PembelianDetail> daftarBelanja = new HashSet<>(); // composition
+    Set<Diskon> daftarDiskon = new HashSet<>();           // aggregation
+    Set<Pajak> daftarPajak = new HashSet<>();
     
     public BigDecimal totalNilai() {
         BigDecimal hasil = BigDecimal.ZERO;
@@ -30,6 +31,16 @@ public class Pembelian {
         
         for(Diskon d : daftarDiskon){
             hasil = hasil.add(d.hitungDiskon());
+        }
+        
+        return hasil;
+    }
+    
+    public BigDecimal totalPajak(){
+        BigDecimal hasil = BigDecimal.ZERO;
+        
+        for(Pajak d : daftarPajak){
+            hasil = hasil.add(d.hitungPajak(this));
         }
         
         return hasil;

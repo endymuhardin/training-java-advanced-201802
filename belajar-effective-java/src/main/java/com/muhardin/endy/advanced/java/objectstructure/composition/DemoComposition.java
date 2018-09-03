@@ -49,5 +49,25 @@ public class DemoComposition {
         System.out.println("Total belanja : "+pb.totalNilai());
         System.out.println("Total diskon : "+pb.totalDiskon());
         System.out.println("Harus dibayar : "+pb.totalNilai().subtract(pb.totalDiskon()));
+        
+        // contoh produk impor
+        ProdukImpor p3 = new ProdukImpor();
+        p3.setId("P-003");
+        p3.setKode("P-003");
+        p3.setNama("Produk 003");
+        p3.setHarga(new BigDecimal("200000000"));
+        p3.setNegaraAsal("Togo");
+        p3.getTarifPajakImpor().put("Togo", new BigDecimal("0.25"));
+        
+        PembelianDetail pd3 = new PembelianDetail();
+        pd3.setProduk(p3);
+        pd3.setJumlah(1);
+        
+        Pembelian pb3 = new Pembelian();
+        pb3.getDaftarBelanja().add(pd3);
+        pb3.getDaftarPajak().add(p3);
+        pb3.getDaftarPajak().add(new PajakPertambahanNilai(new BigDecimal("0.1")));
+        
+        System.out.println("Total Pajak : "+pb3.totalPajak());
     }
 }
