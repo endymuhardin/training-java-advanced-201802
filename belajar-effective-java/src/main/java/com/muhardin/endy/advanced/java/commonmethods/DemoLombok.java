@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java;
+package com.muhardin.endy.advanced.java.commonmethods;
 
 public class DemoLombok {
     public static void main(String[] args) {

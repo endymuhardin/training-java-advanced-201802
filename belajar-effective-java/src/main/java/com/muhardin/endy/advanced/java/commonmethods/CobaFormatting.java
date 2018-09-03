@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java;
+package com.muhardin.endy.advanced.java.commonmethods;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

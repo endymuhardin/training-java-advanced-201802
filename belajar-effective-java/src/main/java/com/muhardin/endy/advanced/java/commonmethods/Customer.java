@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java;
+package com.muhardin.endy.advanced.java.commonmethods;
 
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
