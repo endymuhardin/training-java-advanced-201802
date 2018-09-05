@@ -1,6 +1,6 @@
 package com.muhardin.endy.advanced.java.belajar.design.pattern.factory;
 
-public class DatabaseStorage {
+public class DatabaseStorage implements Storage {
     private String namaDb;
 
     public DatabaseStorage(String namaDb) {

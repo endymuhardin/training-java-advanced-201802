@@ -1,6 +1,6 @@
 package com.muhardin.endy.advanced.java.belajar.design.pattern.factory;
 
-public class CloudStorage {
+public class CloudStorage implements Storage {
     private String provider;
 
     public CloudStorage(String provider) {

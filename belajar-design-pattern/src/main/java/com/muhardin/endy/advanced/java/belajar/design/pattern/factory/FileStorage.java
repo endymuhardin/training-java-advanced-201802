@@ -1,6 +1,6 @@
 package com.muhardin.endy.advanced.java.belajar.design.pattern.factory;
 
-public class FileStorage {
+public class FileStorage implements Storage {
     
     private String namafile;
     
