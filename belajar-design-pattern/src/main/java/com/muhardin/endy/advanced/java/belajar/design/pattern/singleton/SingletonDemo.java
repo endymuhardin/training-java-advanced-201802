@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java.belajar.design.pattern;
+package com.muhardin.endy.advanced.java.belajar.design.pattern.singleton;
 
 public class SingletonDemo {
     public static void main(String[] args) {

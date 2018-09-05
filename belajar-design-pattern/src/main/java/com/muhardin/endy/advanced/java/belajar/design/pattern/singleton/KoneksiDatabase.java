@@ -1,4 +1,4 @@
-package com.muhardin.endy.advanced.java.belajar.design.pattern;
+package com.muhardin.endy.advanced.java.belajar.design.pattern.singleton;
 
 import java.sql.ResultSet;
 
